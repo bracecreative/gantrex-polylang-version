@@ -1,0 +1,25 @@
+.swiper-pagination-bullet {
+  border: 2px solid #ffffff!important;
+  border-radius: 100px!important;
+  opacity: 1!important;
+  width: 12px!important;
+  height: 12px!important;
+  background: transparent!important;
+}
+
+.swiper-pagination-bullet-active {
+  @extend .swiper-pagination-bullet;
+  width: 29px!important;
+}
+
+@media screen and ( max-height: 800px ) { 
+
+  .hero-slider__heading {
+    @apply text-[22px] max-w-[80%] #{!important};
+  }
+
+  .hero-slider__subheading {
+    @apply max-w-[70%] #{!important};
+  }
+
+}

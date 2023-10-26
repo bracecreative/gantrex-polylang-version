@@ -1,0 +1,169 @@
+.careers-excerpt  {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.single-careers .careers-list li::before {
+    content: "•";
+    color: #e96500;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+// .job-card p {
+//     text-align: left;
+//     color: #fff;
+//     padding-bottom: 20px;
+// }
+// GRAVITY FORM STYLING...............
+.single-careers #form-wrap  {
+    display: none;
+    opacity: 1;
+    z-index: 100000000000000000;
+}
+.single-careers .gform-body {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    top: 100px;
+    position: relative;
+    height: 800px;
+    padding: 30px;
+}
+.single-careers #gform_wrapper_3 {
+    display: none;
+    opacity:0.95;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000000000000000000;
+}
+.single-careers #form-title {
+    font-family: 'Sen bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.single-careers textarea#input_3_6{
+    max-height: 200px;
+}
+
+.single-careers input#input_3_1,
+.single-careers input#input_3_4,
+.single-careers input#input_3_5,
+.single-careers textarea#input_3_6 {
+    border: solid 2px #e96500;
+}
+.single-careers ::placeholder {
+    font-size: 12px;
+    font-family: "Franklin Gothic Medium", sans-serif;
+    padding-left: 20px;
+    letter-spacing: 1px;
+  }
+.single-careers .gform_footer {
+    justify-content: center;
+    width: 60%;
+    margin: auto !important;
+} 
+.single-careers #gform_submit_button_3 {
+    z-index: 1000;
+    justify-content: center;
+    color: white;
+    background: #e96500;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: 'Sen Bold', sans-serif;
+    width: 90%;
+}
+.gform_confirmation_wrapper{
+    margin-bottom: 50px;
+    margin-top: -50px;
+    background-color:#0B2B42;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-family: 'Sen Bold', sans-serif;
+    border: 5px solid #e96500;
+}
+
+@media (max-width: 1750px) {
+    .post-type-archive-careers .send-cv-section {
+        padding: 75px 85px;
+    } 
+  }
+@media (max-width: 1100px) {
+    .post-type-archive-careers .send-cv-section {
+        flex-direction: column;
+        text-align-last: center;
+    }
+    .post-type-archive-careers .send-cv-section h1 {
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        width: 70%;
+    }
+    .post-type-archive-careers .text-box-one {
+        padding-bottom: 25px;
+        text-align: center;
+    }
+    .post-type-archive-careers .linkedin article {
+        padding: 0 20px !important;
+    }
+}
+@media (max-width: 1024px) {
+    .current-vacancies-cards{
+        flex-direction: column;
+        align-content: center;
+    } 
+    .current-vacancies-cards > div {
+        width: 90%;
+    }
+    .careers-group-btns > a {
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width: 875px) {
+.post-type-archive-careers .send-cv-section .text-box-one > h1 {
+    width: 100%;
+   }
+   .post-type-archive-careers .send-cv-section {
+    padding: 30px 30px;
+   }
+}
+@media (max-width: 675px) {
+    .careers-intro-text,
+    .current-vacancies article {
+        width: 90%;
+    }
+}
+// @media (max-width: 550px) {
+// .careers-video {
+//     width: 75%;
+// }
+// .post-type-archive-careers video {
+//     width: 75%;
+// }
+// }
+// @media (max-width: 500px) {
+//     .icon-group > div {
+//         width: 100%;
+//     }
+//     .icon-group > div > p {
+//         padding-bottom: 20px;
+//     }
+// }
+// @media (max-width: 350px) {
+//     .careers-group-btns {
+//         width: 250px;
+//     }
+// }

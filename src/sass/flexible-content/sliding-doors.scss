@@ -1,0 +1,55 @@
+.sliding__doors {
+    .background__overlay {
+        background-color: rgba(#1C4B6C, 0.4);
+    }
+
+    .box {
+        flex: 1;
+        transition: 1s;
+
+        &:first-child {
+            flex: 4;
+            margin-top: 35px;
+            @screen lg {
+                margin-top: 0;
+                 flex: 3;
+            }
+        }
+
+        @screen lg {
+            &:hover {
+                flex: 3;
+            }
+        }
+
+        h3 {
+            &:after {
+                width: 100px;
+                height: 5px;
+                display: block;
+                margin-top: 30px;
+                @apply bg-accent mx-auto;
+
+                @screen lg {
+                    margin-top: 50px;
+                    content: '';
+                }
+            }
+        }
+    }
+
+    @screen lg {
+
+        &:hover {
+            .box {
+                &:not(:hover) {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+.blue__banner {
+    background-color: #2F485A;
+}

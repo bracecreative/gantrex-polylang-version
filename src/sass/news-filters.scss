@@ -1,0 +1,52 @@
+.wpgb-facet {
+
+    .wpgb-search-facet {
+
+        .wpgb-input {
+            @apply rounded-none border-2 border-secondary text-secondary h-[60px] #{!important};
+        }
+        
+    }
+
+    .wpgb-hierarchical-list {
+        @apply flex flex-col md:flex-row md:justify-center items-center md:space-x-8 #{!important};
+
+        li {
+            @apply md:mt-0 md:mb-0 #{!important};
+
+            .wpgb-checkbox {
+
+                .wpgb-checkbox-control {
+                    @apply border-2 border-accent rounded-none focus:bg-accent #{!important};
+
+                    input[type="checkbox"]:checked {
+                        background-color:#e96500;
+                    }
+                }
+
+                .wpgb-checkbox-label {
+
+                    @apply uppercase tracking-[2px] gothic-medium text-primary #{!important};
+                }
+            }
+        }
+    }
+}
+
+.wpgb-facet .wpgb-checkbox-facet .wpgb-checkbox[aria-pressed="true"] .wpgb-checkbox-control {
+    @apply bg-accent #{!important};
+}
+
+.wpgb-facet-7 {
+    @apply border-2 border-accent #{!important};
+}
+
+.wpgb-load-more {
+
+    @apply py-2 uppercase flex items-center border-2 border-accent rounded-none bg-transparent sen text-primary #{!important};
+
+    &:after {
+        // margin-top: 6px;
+        content: url("/images/submit-arrow.svg");
+      }
+}

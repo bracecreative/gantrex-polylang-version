@@ -1,0 +1,27 @@
+@media (max-width: 1590px) {
+    footer .middle-col img {
+    margin-right: -120px;
+    }
+}
+@media (max-width: 1500px) {
+    footer form input {
+        width: 95px;
+    }
+}
+@media (max-width: 1279px) {
+    footer .middle-col img {
+    margin-right: 0;
+    }
+}
+
+footer {
+    #nav-wrap {
+        @apply flex flex-col justify-start items-center xl:flex-row xl:space-x-4 xl:items-end;
+
+        li {
+            a {
+                @apply block text-[12px] uppercase gothic-medium tracking-[1.8px] leading-[14px] text-center xl:text-left;
+            }
+        }
+    }
+}

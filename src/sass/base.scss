@@ -1,0 +1,409 @@
+// Heading Styles
+
+.heading {
+  font-family: "Sen Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+
+  &--xs {
+    @extend .heading;
+    font-size: 21px;
+  }
+
+  &--s {
+    @extend .heading;
+    font-size: 35px;
+  }
+
+  &--m {
+    @extend .heading;
+    font-size: 50px;
+  }
+
+  &--l {
+    @extend .heading;
+    font-size: 75px;
+  }
+}
+
+.subheading {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+  line-height: 14px;
+  font-size: 15px;
+}
+
+// Fonts
+
+.body-text {
+  font-family: "Franklin Gothic Book", sans-serif;
+}
+
+.gothic {
+  font-family: "Franklin Gothic", sans-serif;
+
+  &-book {
+    font-family: "Franklin Gothic Book", sans-serif;
+  }
+}
+
+.gothic-medium {
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
+
+.sen {
+  font-family: "Sen", sans-serif;
+}
+
+.sen-bold {
+  font-family: "Sen Bold", sans-serif;
+}
+
+.sen-extra {
+  font-family: "Sen Extra", sans-serif;
+}
+
+// List Style
+
+.gtx-list {
+  list-style: none;
+  /* Remove default bullets */
+}
+
+.gtx-list li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e96500;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+// Button Styling
+
+// Standard button
+.gtx-btn {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/button-arrow.svg");
+    }
+  }
+
+  &:hover {
+    span {
+      color: #fff;
+
+      &:after {
+        margin-top: 6px;
+        content: url("/images/button-arrow-hover.svg");
+      }
+    }
+  }
+}
+
+// Standard button
+.gtx-login-btn {
+  span {
+    &:before {
+      margin-top: 6px;
+      margin-right: 6px;
+      content: url('/images/my-gantrex-icon.svg');
+    }
+    &:after {
+      margin-top: 6px;
+      content: url("/images/button-arrow.svg");
+    }
+  }
+
+  &:hover {
+    span {
+      color: #fff;
+
+      &:after {
+        margin-top: 6px;
+        content: url("/images/button-arrow-hover.svg");
+      }
+    }
+  }
+}
+
+.ports-btn {
+  @apply px-2 border-2 border-accent;
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/button-arrow-alt-two.svg");
+    }
+  }
+
+  &:hover {
+    @apply bg-accent transition ease-in-out duration-500;
+    span {
+      color: #fff;
+
+      &:after {
+        margin-top: 6px;
+        content: url("/images/button-arrow-hover.svg");
+      }
+    }
+  }
+}
+
+.gtx-btn-search {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/button-arrow.svg");
+    }
+  }
+
+  &:hover {
+    span {
+      color: none;
+    }
+  }
+}
+
+.gtx-btn-alt {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/button-arrow-hover.svg");
+    }
+  }
+
+  &:hover {
+    span {
+      color: #fff;
+
+      &:after {
+        margin-top: 6px;
+        content: url("/images/button-arrow-hover.svg");
+      }
+    }
+  }
+}
+
+.gtx-btn-alt-two {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/button-arrow-alt-two.svg");
+    }
+  }
+
+  &:hover {
+    span {
+      color: #fff;
+
+      &:after {
+        margin-top: 6px;
+        content: url("/images/button-arrow-hover.svg");
+      }
+    }
+  }
+}
+
+.gtx-btn-alt-three {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/button-arrow-hover.svg");
+    }
+  }
+
+  &:hover {
+    span {
+      color: #fff;
+
+      &:after {
+        margin-top: 6px;
+        content: url("/images/button-arrow.svg");
+      }
+    }
+  }
+}
+
+
+// .gtx-fixed-cta {
+//   span {
+//     &:after {
+//       margin-top: 6px;
+//       content: url("/images/button-arrow-hover.svg");
+//     }
+//   }
+
+//   &:hover {
+//     span {
+//       color: #fff;
+
+//       &:after {
+//         margin-top: 6px;
+//         content: url("/images/fixed-cta-hover.svg");
+//       }
+//     }
+//   }
+// }
+
+.gtx-submit {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/submit-arrow.svg");
+    }
+  }
+}
+
+.gtx-read-more {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/read-more-icon.svg");
+    }
+  }
+}
+
+.gtx-read-more-alt {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/read-more-icon-alt.svg");
+    }
+  }
+}
+
+.youtube-btn {
+  span {
+    &:after {
+      margin-top: 6px;
+      margin-left: 10px;
+      content: url("/images/youtube-icon.svg");
+    }
+  }
+
+  &:hover {
+    span {
+      color: #fff;
+
+      &:after {
+        margin-top: 6px;
+        margin-left: 10px;
+        content: url("/images/youtube-icon-light.svg");
+      }
+    }
+  }
+}
+
+.youtube-btn-alt {
+  span {
+    &:after {
+      margin-top: 6px;
+      margin-left: 10px;
+      content: url("/images/youtube-icon.svg");
+    }
+  }
+}
+
+.linkedin-btn {
+  span {
+    &:after {
+      margin-top: 6px;
+      margin-left: 10px;
+      content: url("/images/linkedin-icon.svg");
+    }
+  }
+}
+
+.linkedin-alt {
+  span {
+    &:after {
+      margin-top: 6px;
+      margin-left: 10px;
+      content: url("/images/linkedin-alt.svg");
+    }
+  }
+}
+
+// Download Button
+
+.gtx-btn-download {
+  span {
+    &:after {
+      margin-top: 6px;
+      content: url("/images/download-icon.svg");
+    }
+  }
+}
+
+// Select Styling
+
+.gtx-select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("/images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 10px;
+}
+
+.gtx-select-alt {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("/images/select-arrow-alt.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 10px;
+}
+
+.container {
+  width: 1360px;
+  // Text highlight
+}
+
+.highlight {
+  background-color: #e96500;
+  padding: 0px 10px;
+  line-height: none;
+}
+
+// Global Search style
+.global-search label::before {
+  content: "";
+  background-image: url("/images/search-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  height: 15px;
+  width: 15px;
+  display: block;
+  position: relative;
+  top: 37px;
+  left: 30px;
+}
+@media (max-width: 764px) {
+  .home h1,
+  .home h2 {
+    line-height: 35px;
+  }
+}
+
+p {
+  line-height: 22px !important;
+}
+
+.careers-main-content {
+  li {
+    text-align: left;
+    list-style-type: disc;
+
+  }
+}

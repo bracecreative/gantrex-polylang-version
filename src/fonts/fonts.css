@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Sen Bold";
+  src: url("Sen-Bold.woff2") format("woff2"),
+    url("Sen-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sen";
+  src: url("Sen-Regular.woff2") format("woff2"),
+    url("Sen-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sen Extra";
+  src: url("Sen-ExtraBold.woff2") format("woff2"),
+    url("Sen-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Franklin Gothic";
+  src: url("FranklinGothic.woff2") format("woff2"),
+    url("FranklinGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Franklin Gothic Book";
+  src: url("FranklinGothic-Book.woff2") format("woff2"),
+    url("FranklinGothic-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Franklin Gothic Medium";
+  src: url("FranklinGothic-Medium.woff2") format("woff2"),
+    url("FranklinGothic-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

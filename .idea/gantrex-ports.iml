@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/inc/components" isTestSource="false" packagePrefix="Brace" />
+      <sourceFolder url="file://$MODULE_DIR$/inc/components/document-picker" isTestSource="false" packagePrefix="Brace" />
+      <sourceFolder url="file://$MODULE_DIR$/inc/components/find-us-card" isTestSource="false" packagePrefix="Brace" />
+      <sourceFolder url="file://$MODULE_DIR$/inc/components/location-selector" isTestSource="false" packagePrefix="Brace" />
+      <sourceFolder url="file://$MODULE_DIR$/inc/document-directory" isTestSource="false" packagePrefix="Brace" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

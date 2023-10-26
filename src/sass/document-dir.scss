@@ -1,0 +1,227 @@
+.document-directory table {
+  display: inline-block;
+  overflow: scroll;
+}
+.document-directory table td {
+    border: none;
+    font-family: "Franklin Gothic Book", sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    table-layout:fixed;
+    width: 100%;
+  }
+  .directory-filter {
+    position:relative;
+  }
+  .directory-filter svg{
+    position:absolute;
+    left: calc(100% - 25px);
+    top: 45%;
+  }
+  .document-directory thead {
+    border-left-width: 2px;
+    border-left-color: #3091d9;
+  }
+  .document-directory table tr th {
+    background-color: #0B2B42;
+  }
+  .document-directory tbody tr:nth-child(even) {
+    background: #fff;
+  }
+  .document-directory tbody tr:nth-child(odd) {
+    background: #F8F8F8;
+  }
+  .document-filters {
+      margin-bottom: 3rem;
+  }
+  .document-filters > select{
+    background-color: red !important;
+  }
+  #document-id .select2-container--default {
+    width: 100% !important;
+  }
+  .select2-container--default .select2-search--inline .select2-search__field {
+    height: 22px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    letter-spacing: 2px;
+  }
+  #nothing-found {
+    color: white;
+  }
+.post-type-archive-document table {
+    table-layout:fixed;
+    width:100%;
+}
+#doc-intro {
+    max-width:800px
+}
+.document-directory-download svg {
+  min-width: 20px;
+  min-height: 20px;
+}
+//============================= Data Capture =============================//
+.data-capture > div {
+  height: auto;
+  width: 75vw;
+  max-width: 1024px;
+  background-color: #0B2B42;
+  border: none;
+}
+.data-capture .gform_title {
+  padding: 40px 25px 25px 25px;
+  font-family: 'Sen Bold', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+.data-capture .courtesy {
+  color: white;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  text-align: left;
+  padding: 20px 0px;
+  width: 90%;
+  margin: auto;
+}
+ 
+.data-capture .gfield_label {
+  display: none !important;
+}
+.data-capture .ginput_container {
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 0;
+    width: 90%;
+    margin: auto;
+  }
+.data-capture .ginput_container input {
+  background-color:white !important;
+  height: 50px;
+}
+.data-capture .ginput_container input::placeholder {
+  color: #0B2B42;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  letter-spacing: 2px;
+}
+.data-capture option {
+  color: #0B2B42;
+  font-family: 'Franklin Gothic Medium', sans-serif!important;
+  letter-spacing: 2px;
+}
+.data-capture .ginput_container_checkbox {
+  background-color: #0B2B42;
+  border: none;
+  color: white;
+}
+
+.data-capture .gform_footer .gform_button {
+    background-color: #e96500;
+    padding: 15px 0;
+    border: 2px solid #e96500;
+    font-family: 'Sen Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.data-capture .document-dc-close {
+  top: 4.5%;
+  right: 25px;
+}
+.data-capture .validation_message {
+  width: 90% !important;
+  margin: auto;
+  margin-top: 15px;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+}
+.data-capture .document-dc-close svg {
+  fill: white;
+}
+
+.data-capture .document-dc-close svg:hover {
+  fill: #e96500;
+}
+.data-capture .gform_footer .gform_button:hover {
+  background-color: #e96500;
+  cursor: pointer;
+}
+.data-capture .ginput_container_checkbox {
+  background-color: #0B2B42;
+  border: none;
+  color: white;
+}
+.data-capture .ginput_container_checkbox label a {
+  color: #e96500;
+}
+
+//============================= media quieres =============================//
+@media (max-width: 1024px) {
+  .document-directory table {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 780px) {
+  .document-filters {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      margin-top: -25px;
+  }
+  .document-directory {
+      padding-top: 0;
+  }
+  .directory-filter {
+    width: 100% !important;
+  }
+}
+
+// POPUP MEDIA QUERY AMENDS
+
+@media (max-width: 1170px) {
+  .post-type-archive-document .data-capture>div {
+      height: auto;
+      }
+  }
+  @media (max-width: 660px) {
+  .post-type-archive-document .data-capture>div {
+      height: auto;
+      }
+  }
+  @media (max-width: 560px) {
+  .post-type-archive-document .data-capture>div {
+      height: auto;
+      }
+  }
+  @media (max-width: 400px) {
+  .post-type-archive-document .data-capture .gform_title {
+      font-size: 14px;
+      }
+  }
+  @media (max-width: 390px) {
+  .data-capture .ginput_container input{
+      height: 20px;
+      }
+  }
+
+// Pagination 
+
+.pagination {
+
+  .nav-links {
+    padding: 5px 10px;
+    @apply gothic-medium uppercase tracking-widest;
+
+    .current {
+      padding: 5px 10px;
+      @apply mr-2 border-2 border-accent text-white hover:text-accent cursor-pointer;
+    }
+
+    .page-numbers {
+      @apply text-white hover:text-accent cursor-pointer;
+    }
+  }
+}

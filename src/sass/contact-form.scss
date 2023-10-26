@@ -1,0 +1,64 @@
+.contact-form {
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    @apply gothic-medium text-[15px] tracking-[2.25px] leading-[14px] border-2 border-white min-h-[60px] w-full focus:outline-none;
+  }
+
+  select {
+    @apply cursor-pointer;
+  }
+
+  .gform_wrapper.gravity-theme .ginput_container_date input {
+    width: 100%;
+  }
+
+  .gform_page_footer {
+    @apply flex justify-center items-center;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    @apply sen-bold text-base uppercase text-white border-2 border-accent bg-accent lg:bg-transparent lg:hover:bg-accent cursor-pointer tracking-[1.5px] p-4 w-[100%] transition-all duration-500 ease-in-out;
+
+    &:after {
+      //   margin-top: 6px;
+      content: url("/images/button-arrow.svg");
+    }
+  }
+
+  // input::-webkit-input-placeholder,
+  // textarea::-webkit-input-placeholder {
+  //   color: #ffffff;
+  // }
+
+  .gform_confirmation_message_2,
+  .gform_confirmation_message_4 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  //misc additions
+
+  #label_4_13_1 {
+    color: #FFF;
+
+    a {
+      color: #e96500;
+    }
+  }
+
+}
+#input_5_6, #input_5_11, #input_5_10 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

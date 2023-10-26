@@ -1,0 +1,964 @@
+.country-icon {
+    display: block;
+    margin: 0 10px;
+    margin-left: 0;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: scale(.75);
+    border-radius: 50%;
+    border: 5px solid #fff;
+   &--afghanistan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/afghanistan_flag-png-round-small.png');
+   }
+   &--andorra::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/andorra_flag-png-round-small.png');
+   }
+   &--angola::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/angola_flag-png-round-small.png');
+   }
+   &--antigua::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/antigua-and-barbuda_flag-png-round-small.png');
+   }
+   &--argentina::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/argentina_flag-png-round-small.png');
+   }
+   &--armenia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/armenia_flag-png-round-small.png');
+   }
+   &--australia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/australia_flag-png-round-small.png');
+   }
+   &--austria::before {
+    @extend .country-icon;
+    content: '';
+    background-image: url('/images/flags/austria_flag-png-round-small.png');
+}
+   &--azerbaijan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/azerbaijan_flag-png-round-small.png');
+   }
+   &--bahamas::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/bahamas_flag-png-round-small.png');
+   }
+   &--bahrain::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/bahrain_flag-png-round-small.png');
+   }
+   &--bangladesh::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/bangladesh_flag-png-round-small.png');
+   }
+   &--barbados::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/barbados_flag-png-round-small.png');
+   }
+   &--belarus::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/belarus_flag-png-round-small.png');
+   }
+   &--belgium::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/belgium_flag-png-round-small.png');
+   }
+   &--belize::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/belize_flag-png-round-small.png');
+   }
+   &--benin::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/benin_flag-png-round-small.png');
+   }
+   &--bhutan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/bhutan_flag-png-round-small.png');
+   }
+   &--bolivia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/bolivia_flag-png-round-small.png');
+   }
+   &--bosnia-herzegovina::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/bosnia-and-herzegovina_flag-png-round-small.png');
+   }
+   &--botswana::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/botswana_flag-png-round-small.png');
+   }
+   &--brazil::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/brazil_flag-png-round-small.png');
+   }
+   &--brunei::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/brunei_flag-png-round-small.png');
+   }
+   &--bulgaria::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/bulgaria_flag-png-round-small.png');
+   }
+   &--burkina::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/burkina-faso_flag-png-round-small.png');
+   }
+   &--burundi::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/burundi_flag-png-round-small.png');
+   }
+   &--cambodia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/cambodia_flag-png-round-small.png');
+   }
+   &--cameroon::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/cameroon_flag-png-round-small.png');
+   }
+   &--canada::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/canada_flag-png-round-small.png');
+   }
+   &--cape-verde::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/cape-verde_flag-png-round-small.png');
+   }
+   &--central-african-rep::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/france_flag-png-round-small.png');
+   }
+   &--chad::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/chad_flag-png-round-small.png');
+   }
+   &--chile::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/chile_flag-png-round-small.png');
+   }
+   &--china::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/china_flag-png-round-small.png');
+   }
+   &--colombia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/colombia_flag-png-round-small.png');
+   }
+   &--comoros::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/comoros_flag-png-round-small.png');
+   }
+   &--congo::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/congo-republic-of-the_flag-png-round-small.png');
+   }
+   &--congo-democratic-rep::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/congo-democratic-republic-of-the_flag-png-round-small.png');
+   }
+   &--costa-rica::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/costa-rica_flag-png-round-small.png');
+   }
+   &--croatia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/croatia_flag-png-round-small.png');
+   }
+   &--cuba::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/cuba_flag-png-round-small.png');
+   }
+   &--cyprus::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/cyprus_flag-png-round-small.png');
+   }
+   &--czech-republic::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/czech-republic_flag-png-round-small.png');
+   }
+   &--denmark::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/denmark_flag-png-round-small.png');
+   }
+   &--djibouti::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/djibouti_flag-png-round-small.png');
+   }
+   &--dominica::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/dominica_flag-png-round-small.png');
+   }
+   &--dominican-republic::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/dominican-republic_flag-png-round-small.png');
+   }
+   &--east-timor::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/east-timor_flag-png-round-small.png');
+   }
+   &--ecuador::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/ecuador_flag-png-round-small.png');
+   }
+   &--egypt::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/egypt_flag-png-round-small.png');
+   }
+   &--el-salvador::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/el-salvador_flag-png-round-small.png');
+   }
+   &--equatorial-guinea::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/equatorial-guinea_flag-png-round-small.png');
+   }
+   &--eritrea::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/eritrea_flag-png-round-small.png');
+   }
+   &--estonia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/estonia_flag-png-round-small.png');
+   }
+   &--ethiopia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/ethiopia_flag-png-round-small.png');
+   }
+   &--fiji::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/fiji_flag-png-round-small.png');
+   }
+   &--finland::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/finland_flag-png-round-small.png');
+   }
+   &--france::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/france_flag-png-round-small.png');
+   }
+   &--gabon::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/gabon_flag-png-round-small.png');
+   }
+   &--gambia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/gambia_flag-png-round-small.png');
+   }
+   &--georgia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/georgia_flag-png-round-small.png');
+   }
+   &--germany::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/germany_flag-png-round-small.png');
+   }
+   &--ghana::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/ghana_flag-png-round-small.png');
+   }
+   &--greece::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/greece_flag-png-round-small.png');
+   }
+   &--grenada::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/grenada_flag-png-round-small.png');
+   }
+   &--guatemala::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/france_flag-png-round-small.png');
+   }
+   &--guinea::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/guinea_flag-png-round-small.png');
+   }
+   &--guinea-bissau::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/guinea-bissau_flag-png-round-small.png');
+   }
+   &--guyana::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/guyana_flag-png-round-small.png');
+   }
+   &--haiti::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/haiti_flag-png-round-small.png');
+   }
+   &--honduras::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/honduras_flag-png-round-small.png');
+   }
+   &--hungary::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/hungary_flag-png-round-small.png');
+   }
+   &--iceland::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/iceland_flag-png-round-small.png');
+   }
+   &--india::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/india_flag-png-round-small.png');
+   }
+   &--indonesia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/indonesia_flag-png-round-small.png');
+   }
+   &--iran::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/iran_flag-png-round-small.png');
+   }
+   &--iraq::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/iraq_flag-png-round-small.png');
+   }
+   &--ireland-republic::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/ireland_flag-png-round-small.png');
+   }
+   &--israel::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/israel_flag-png-round-small.png');
+   }
+   &--italy::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/italy_flag-png-round-small.png');
+   }
+   &--jamaica::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/jamaica_flag-png-round-small.png');
+   }
+   &--japan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/japan_flag-png-round-small.png');
+   }
+   &--jordan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/jordan_flag-png-round-small.png');
+   }
+   &--kazakhstan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/kazakhstan_flag-png-round-small.png');
+   }
+   &--kenya::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/kenya_flag-png-round-small.png');
+   }
+   &--kiribati::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/kiribati_flag-png-round-small.png');
+   }
+   &--north-korea::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/north-korea_flag-png-round-small.png');
+   }
+   &--korea::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/south-korea_flag-png-round-small.png');
+   }
+   &--kosovo::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/kosovo_flag-png-round-small.png');
+   }
+   &--kuwait::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/kuwait_flag-png-round-small.png');
+   }
+   &--kyrgyzstan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/kyrgyzstan_flag-png-round-small.png');
+   }
+   &--laos::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/laos_flag-png-round-small.png');
+   }
+   &--latvia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/latvia_flag-png-round-small.png');
+   }
+   &--lebanon::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/lebanon_flag-png-round-small.png');
+   }
+   &--lesotho::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/lesotho_flag-png-round-small.png');
+   }
+   &--liberia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/liberia_flag-png-round-small.png');
+   }
+   &--libya::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/libya_flag-png-round-small.png');
+   }
+   &--liechtenstein::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/liechtenstein_flag-png-round-small.png');
+   }
+   &--lithuania::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/lithuania_flag-png-round-small.png');
+   }
+   &--luxembourg::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/luxembourg_flag-png-round-small.png');
+   }
+   &--madagascar::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/madagascar_flag-png-round-small.png');
+   }
+   &--malawi::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/malawi_flag-png-round-small.png');
+   }
+   &--malaysia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/malaysia_flag-png-round-small.png');
+   }
+   &--maldives::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/maldives_flag-png-round-small.png');
+   }
+   &--mali::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/mali_flag-png-round-small.png');
+   }
+   &--malta::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/malta_flag-png-round-small.png');
+   }
+   &--marshall-islands::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/marshall-islands_flag-png-round-small.png');
+   }
+   &--mauritania::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/mauritania_flag-png-round-small.png');
+   }
+   &--mauritius::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/mauritius_flag-png-round-small.png');
+   }
+   &--mexico::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/mexico_flag-png-round-small.png');
+   }
+   &--micronesia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/micronesia_flag-png-round-small.png');
+   }
+   &--moldova::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/moldova_flag-png-round-small.png');
+   }
+   &--monaco::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/monaco_flag-png-round-small.png');
+   }
+   &--mongolia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/mongolia_flag-png-round-small.png');
+   }
+   &--montenegro::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/montenegro_flag-png-round-small.png');
+   }
+   &--morocco::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/morocco_flag-png-round-small.png');
+   }
+   &--mozambique::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/mozambique_flag-png-round-small.png');
+   }
+   &--myanmar::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/myanmar_flag-png-round-small.png');
+   }
+   &--namibia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/namibia_flag-png-round-small.png');
+   }
+   &--nauru::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/nauru_flag-png-round-small.png');
+   }
+   &--nepal::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/nepal_flag-png-round-small.png');
+   }
+   &--netherlands::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/netherlands_flag-png-round-small.png');
+   }
+   &--new-zealand::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/new-zealand_flag-png-round-small.png');
+   }
+   &--nicaragua::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/nicaragua_flag-png-round-small.png');
+   }
+   &--niger::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/niger_flag-png-round-small.png');
+   }
+   &--nigeria::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/nigeria_flag-png-round-small.png');
+   }
+   &--norway::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/norway_flag-png-round-small.png');
+   }
+   &--oman::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/oman_flag-png-round-small.png');
+   }
+   &--pakistan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/pakistan_flag-png-round-small.png');
+   }
+   &--palau::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/palau_flag-png-round-small.png');
+   }
+   &--panama::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/panama_flag-png-round-small.png');
+   }
+   &--papua-new-guinea::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/papua-new-guinea_flag-png-round-small.png');
+   }
+   &--paraguay::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/paraguay_flag-png-round-small.png');
+   }
+   &--peru::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/peru_flag-png-round-small.png');
+   }
+   &--philippines::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/philippines_flag-png-round-small.png');
+   }
+   &--poland::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/poland_flag-png-round-small.png');
+   }
+   &--portugal::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/portugal_flag-png-round-small.png');
+   }
+   &--qatar::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/qatar_flag-png-round-small.png');
+   }
+   &--romania::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/romania_flag-png-round-small.png');
+   }
+   &--russia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/russia_flag-png-round-small.png');
+   }
+   &--rwanda::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/rwanda_flag-png-round-small.png');
+   }
+   &--saint-vincent-and-the-grenadines::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/saint-vincent-and-the-grenadines_flag-png-round-small.png');
+   }
+   &--samoa::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/samoa_flag-png-round-small.png');
+   }
+   &--san-marino::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/san-marino_flag-png-round-small.png');
+   }
+   &--sao-tome-and-principe::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/sao-tome-and-principe_flag-png-round-small.png');
+   }
+   &--saudi-arabia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/saudi-arabia_flag-png-round-small.png');
+   }
+   &--senegal::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/senegal_flag-png-round-small.png');
+   }
+   &--serbia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/serbia_flag-png-round-small.png');
+   }
+   &--seychelles::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/seychelles_flag-png-round-small.png');
+   }
+   &--sierra-leone::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/sierra-leone_flag-png-round-small.png');
+   }
+   &--singapore::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/singapore_flag-png-round-small.png');
+   }
+   &--slovakia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/slovakia_flag-png-round-small.png');
+   }
+   &--slovenia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/slovenia_flag-png-round-small.png');
+   }
+   &--solomon-islands::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/solomon-islands_flag-png-round-small.png');
+   }
+   &--somalia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/somalia_flag-png-round-small.png');
+   }
+   &--south-africa::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/south-africa_flag-png-round-small.png');
+   }
+   &--south-sudan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/south-sudan_flag-png-round-small.png');
+   }
+   &--spain::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/spain_flag-png-round-small.png');
+   }
+   &--sri-lanka::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/sri-lanka_flag-png-round-small.png');
+   }
+   &--sudan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/sudan_flag-png-round-small.png');
+   }
+   &--suriname::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/suriname_flag-png-round-small.png');
+   }
+   &--swaziland::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/swaziland_flag-png-round-small.png');
+   }
+   &--sweden::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/sweden_flag-png-round-small.png');
+   }
+   &--switzerland::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/switzerland_flag-png-round-small.png');
+   }
+   &--syria::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/syria_flag-png-round-small.png');
+   }
+   &--taiwan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/taiwan_flag-png-round-small.png');
+   }
+   &--tajikistan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/tajikistan_flag-png-round-small.png');
+   }
+   &--tanzania::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/tanzania_flag-png-round-small.png');
+   }
+   &--thailand::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/thailand_flag-png-round-small.png');
+   }
+   &--togo::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/togo_flag-png-round-small.png');
+   }
+   &--tonga::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/tonga_flag-png-round-small.png');
+   }
+   &--trinidad-and-tobago::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/trinidad-and-tobago_flag-png-round-small.png');
+   }
+   &--tunisia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/tunisia_flag-png-round-small.png');
+   }
+   &--turkey::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/turkey_flag-png-round-small.png');
+   }
+   &--turkmenistan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/turkmenistan_flag-png-round-small.png');
+   }
+   &--tuvalu::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/tuvalu_flag-png-round-small.png');
+   }
+   &--uganda::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/uganda_flag-png-round-small.png');
+   }
+   &--ukraine::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/ukraine_flag-png-round-small.png');
+   }
+   &--united-arab-emirates::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/united-arab-emirates_flag-png-round-small.png');
+   }
+   &--united-kingdom::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/united-kingdom_flag-png-round-small.png');
+   }
+   &--usa::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/united-states-of-america_flag-png-round-small.png');
+   }
+   &--uruguay::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/uruguay_flag-png-round-small.png');
+   }
+   &--uzbekistan::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/uzbekistan_flag-png-round-small.png');
+   }
+   &--vanuatu::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/vanuatu_flag-png-round-small.png');
+   }
+   &--vatican-city::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/vatican-city_flag-png-round-small.png');
+   }
+   &--venezuela::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/venezuela_flag-png-round-small.png');
+   }
+   &--vietnam::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/vietnam_flag-png-round-small.png');
+   }
+   &--yemen::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/yemen_flag-png-round-small.png');
+   }
+   &--zambia::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/zambia_flag-png-round-small.png');
+   }
+   &--zimbabwe::before {
+       @extend .country-icon;
+       content: '';
+       background-image: url('/images/flags/zimbabwe_flag-png-round-small.png');
+   }
+
+}

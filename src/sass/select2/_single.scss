@@ -1,0 +1,40 @@
+.select2-selection--single {
+  box-sizing: border-box;
+
+  cursor: pointer;
+  display: block;
+
+  height: 55px;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  .select2-selection__rendered {
+    @apply text-[15px] tracking-[2.25px] leading-[14px];
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-right: 20px;
+    font-family: "Franklin Gothic Medium", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .select2-selection__clear {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+  }
+}
+
+&[dir="rtl"] {
+  .select2-selection--single {
+    .select2-selection__rendered {
+      padding-right: 8px;
+      padding-left: 20px;
+    }
+  }
+}

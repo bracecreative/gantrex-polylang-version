@@ -1,0 +1,192 @@
+.reference-body {
+  a {
+    @apply text-secondary;
+  }
+}
+
+.wpgb-search-facet input[type="search"] {
+  padding: 10px 60px !important;
+}
+.wpgb-facet select.wpgb-select,
+ .wpgb-facet .wpgb-search-facet input[type="search"],
+ .wpgb-facet .wpgb-autocomplete-facet input[type="search"],
+ .wpgb-facet-4 .wpgb-select label#wpgb-select-label-0,
+ .wpgb-select-placeholder input[type="text"] {
+  border-color: #0B2B42;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+.wpgb-facet>fieldset:last-child {
+  margin-bottom: 15px !important;
+}
+.wpgb-select-facet select{
+  height: 60px !important;
+  border-radius: 0 !important;
+}
+
+.icon-thumbnails {
+  padding-bottom: 20px;
+  gap: 1em;
+}
+.wpgb-input-icon {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+.wpgb-facet-2 input {
+  height: 60px !important;
+  border-radius: 0 !important;
+}
+
+.reference-facets .wpgb-facet-4 .wpgb-select {
+  height: 60px !important;
+  border-radius: 0 !important;
+  border-color: #0B2B42;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  letter-spacing: 1px;
+}
+.wpgb-facet-1 {
+  width: 49.7%;
+  display: inline-block;
+}
+.wpgb-facet-4 {
+  width: 49.9%;
+  display: inline-block;
+}
+.wpgb-facet-title {
+  display: none;
+}
+.icon-thumbnails > div{
+  text-transform: capitalize;
+}
+  .industry-icon {
+    display: block;
+    display: block;
+    margin: 0 10px;
+    margin-left: 0;
+    height:40px;
+
+    width: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(.75);
+    &--warehousing::before {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/warehousing.svg');
+    }
+  
+    &--portsintermodals::before  {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/ports-intermodal.svg');  
+    }
+  
+    &--shipyard::before  {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/shipyards.svg');
+    }
+  
+    &--steelaluminium::before  {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/steel-aluminium.svg');
+    }
+    &--cement::before {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/cement.svg');
+    }
+  
+    &--mining::before  {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/mining.svg');  
+    }
+  
+    &--railways::before  {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/railways.svg');
+    }
+  
+    &--speciality::before  {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/speciality.svg');
+    }
+    &--utilities::before  {
+      @extend .industry-icon;
+      content: '';
+      background-image: url('/images/utilities.svg');
+    }
+    &--wastetreatment::before  {
+      @extend .country-icon;
+      content: '';
+      background-image: url('/images/waste-management.svg');
+    }
+  }
+  @media (max-width: 1500px) {
+    .dropdowns {
+      max-width: 90%;
+    }
+    .references-post-wrap {
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 1024px) {
+    .reference-image  {
+      max-width: 100%;
+    }
+    .reference-card {
+      max-height: 100%;
+    }
+    .reference-facets .wpgb-facet-1,
+    .reference-facets .wpgb-facet-4 {
+     width: 100%;
+   }
+  }
+ @media (max-width: 800px) {
+   .single-references h1 {
+     min-width: 90vw;
+   }
+  .reference-facets {
+    width: 90%;
+  }
+  .reference-card-text {
+    padding: 20px;
+  }
+  .references-post-wrap {
+    width: 100%;
+  }
+ }
+ @media (max-width: 450px) {
+  .references-post-wrap .icon-thumbnails {
+    flex-direction: column;
+  }
+ }
+
+ // BUGGY AS HELL, DONT TOUCH //
+ @media (max-width: 1800px) {
+  .wpgb-facet-1 {
+    width: 49.7%;
+    display: inline-block;
+  }
+  .wpgb-facet-4 {
+    width: 49.7%;
+    display: inline-block;
+  }
+ }
+ @media (max-width: 1200px) {
+  .wpgb-facet-1 {
+    width: 49.5%;
+    display: inline-block;
+  }
+  .wpgb-facet-4 {
+    width: 49.5%;
+    display: inline-block;
+  }
+ }

@@ -1,0 +1,9 @@
+.select2-container .select2-selection--single {
+    min-height: 100% !important;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: none !important;
+}
+.directory-filter > textarea::after{
+    cursor: pointer;
+}

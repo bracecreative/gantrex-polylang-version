@@ -1,0 +1,88 @@
+// Any custom stuff
+@import "/src/fonts/fonts.css";
+@import "base.scss";
+@import "careers.scss";
+@import "news.scss";
+@import "country-flags.scss";
+@import "references.scss";
+@import "search.scss";
+@import "products.scss";
+@import "industries.scss";
+@import "document-dir.scss";
+@import "nav.scss";
+
+// Product Single Template
+@import "product-single/video-slider.scss";
+@import "product-single/post-slider.scss";
+@import "product-single/hero.scss";
+
+// Flexible Content
+@import "flexible-content/hero-slider.scss";
+@import "flexible-content/circle-bar.scss";
+@import "flexible-content/progresscircle.css";
+@import "flexible-content/cta-cards.scss";
+@import "flexible-content/reference-component.scss";
+@import "flexible-content/news-slider.scss";
+@import "flexible-content/sliding-doors.scss";
+
+// Navigation
+@import "desktop-nav.scss";
+@import "mobile-nav.scss";
+@import "footer.scss";
+
+// Contact Form
+@import "contact-form.scss";
+
+// Location Selector
+@import "location-selector.scss";
+
+// Language Switcher
+@import "language-switcher.scss";
+
+// Language Switcher
+@import "brochure-download.scss";
+
+// News Filters 
+@import "news-filters.scss";
+
+// Policy Pages
+@import "policies.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.left-right {
+  animation: left-right 1s infinite;
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  100% {
+    transform: translateX(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+}
+
+.hero-text {
+  p {
+    a {
+      @apply text-secondary;
+    }
+  }
+}
+
+#plain-text-with-image {
+  p {
+    a {
+      @apply text-secondary #{!important};
+    }
+  }
+}

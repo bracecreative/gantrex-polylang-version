@@ -1,0 +1,28 @@
+.single-products .document-picker-language span,
+.single-services .document-picker-language span,
+.single-industries .document-picker-language span{
+    width: 200px !important;
+    align-items: center !important;
+}
+.single-products .document-picker-language span b,
+.single-services .document-picker-language span b,
+.single-industries .document-picker-language span b{
+    left: calc(100% - 10px) !important;
+}
+.single-products .document-picker,
+.single-services .document-picker,
+.single-industries .document-picker {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.single-products .document-picker .document-picker-select,
+.single-services .document-picker .document-picker-select,
+.single-industries .document-picker .document-picker-select  {
+    color: white;
+}
+.single-products .brochure-download > div > div,
+.single-services .brochure-download > div > div,
+.single-industries .brochure-download > div > div {
+    justify-content: center;
+}
