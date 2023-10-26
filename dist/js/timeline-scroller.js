@@ -1,1 +1,0 @@
-const buttonRight=document.getElementById("slideRight"),buttonLeft=document.getElementById("slideLeft"),track=document.getElementById("track");buttonLeft.onclick=function(){track.scrollLeft-=360},buttonRight.onclick=function(){track.scrollLeft+=360};

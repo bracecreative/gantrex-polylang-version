@@ -86,3 +86,23 @@ html {
     }
   }
 }
+
+//Some css changes that were in the custom css & js plugin brought into the theme
+
+video.w-full.max-h-\[400px\] {
+	border: solid;
+	border-width: 0px;
+	border-radius: 5px;
+}
+.absolute.inset-0.w-full.h-full.flex.flex-col.items-center.justify-center.cursor-pointer {
+    background: radial-gradient(#0000005c, transparent);
+}
+.pll-switcher-select {
+    font-family: 'Sen Bold';
+	color: white;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background-color: rgb(233 101 0/var(--tw-bg-opacity));
+    margin: 0px 5px;
+	height: 100%;
+}

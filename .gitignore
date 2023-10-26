@@ -1,0 +1,6 @@
+node_modules
+dist/
+videos/
+.current-env
+.env
+.DS_Store
