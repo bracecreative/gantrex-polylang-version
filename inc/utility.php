@@ -132,3 +132,19 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'      => false
     ));
 }
+
+//Functions used for hardcoded links in polylang
+function the_permalink_polylang($post_id){
+
+    $translations = pll_get_post_translations($post_id);
+    $current_lang = pll_current_language('slug');
+
+    echo get_the_permalink($translations[$current_lang]);
+}
+
+function the_title_polylang($post_id){
+    $translations = pll_get_post_translations($post_id);
+    $current_lang = pll_current_language('slug');
+
+    echo get_the_title($translations[$current_lang]);
+}

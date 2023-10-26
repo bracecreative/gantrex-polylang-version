@@ -97,7 +97,7 @@ if (is_page($enabledPagesArray)) {
                 </div>
 
                 <div class="flex justify-center items-center">
-                    <a class="hidden lg:block text-white gtx-btn-alt uppercase text-sm xl:text-lg text-center mx-auto bg-accent px-4" href="/find-us">
+                    <a class="hidden lg:block text-white gtx-btn-alt uppercase text-sm xl:text-lg text-center mx-auto bg-accent px-4" href="<?php the_permalink_polylang(204); ?>">
                         <span class="sen font-bold flex items-center justify-center">
                             <?php echo __('find us', 'brace-starter-theme') ?>
                         </span>

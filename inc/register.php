@@ -113,6 +113,46 @@ function register_options_page()
         'menu_slug'   => 'gantrex-settings',
         'parent_slug' => 'options-general.php'
     ));
+
+    if(function_exists('acf_add_options_sub_page')) {
+
+        $cpt_pages = array(
+            'careers',
+            'industries',
+            'services',
+            'references',
+            'products',
+            'post'
+        );
+
+        foreach ($cpt_pages as $cpt) {
+
+            //    Register the CPT language options pages
+            foreach (['en', 'es', 'de', 'fr', 'zh-hans'] as $lang) {
+
+                $lang_uc = ucfirst($lang);
+                $parent = '';
+
+                if($cpt == 'post') {
+                    $parent = 'edit.php';
+                } else {
+                    $parent = 'edit.php?post_type=';
+                }
+
+                acf_add_options_sub_page([
+                    'page_title' => "Options $lang_uc",
+                    'menu_title' => __("Options ${lang_uc}", 'brace-starter-theme'),
+                    'menu_slug' => "${cpt}-options-${lang}",
+                    'post_id' => $lang,
+                    'parent' => "${parent}${cpt}"
+                ]);
+
+            }
+
+        }
+
+    }
+
 }
 
 add_action('init', '\Brace\register_options_page');
