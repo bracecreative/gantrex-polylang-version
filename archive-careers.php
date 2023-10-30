@@ -5,11 +5,13 @@ Template Name: Careers Page Template
 <?php get_header(); ?>
 
 <?php 
-$careersTitle  = get_field('careers_archive_title', 'option');
-$careersTitleHighlight = get_field('careers_title_highlight', 'option');
-$careersPara  = get_field('careers_archive_copy', 'option');
+$careersTitle  = get_field('careers_archive_title', pll_current_language('slug'));
+$careersTitleHighlight = get_field('careers_title_highlight', pll_current_language('slug'));
+$careersPara  = get_field('careers_archive_copy', pll_current_language('slug'));
 $careersNewTitle = brace_highlighter($careersTitleHighlight, $careersTitle);
-$heroImage = get_field('careers_hero_image', 'option')['url'];
+if(!empty(get_field('careers_hero_image', pll_current_language('slug'))['url'])):
+$heroImage = get_field('careers_hero_image', pll_current_language('slug'))['url'];
+endif;
 ?>
 
 <img src="<?php echo $heroImage; ?>" class="object-cover pb-[50px] max-h-[400px]" width="100%" alt="">
@@ -24,14 +26,14 @@ $heroImage = get_field('careers_hero_image', 'option')['url'];
 
     <?php 
 // Check rows exists.
-if( have_rows('icon_repeater', 'option') ):
+if( have_rows('icon_repeater', pll_current_language('slug')) ):
 
     // Loop through rows.
-    while( have_rows('icon_repeater', 'option') ) : the_row();
+    while( have_rows('icon_repeater', pll_current_language('slug')) ) : the_row();
 
         // Load sub field value.
-        $icon_image = get_sub_field('icon_image', 'option')['url'];
-        $icon_tag = get_sub_field('icon_text', 'option'); ?>
+        $icon_image = get_sub_field('icon_image', pll_current_language('slug'))['url'];
+        $icon_tag = get_sub_field('icon_text', pll_current_language('slug')); ?>
 
     <div class="w-[35%] lg:w-1/4 flex flex-col items-center justify-between"><img class="w-[160px] h-160px] mb-8"
             src="<?php echo $icon_image ?>"   alt="">
@@ -49,8 +51,8 @@ endif; ?>
 
 <?php 
 
-$testimonial_title = get_field('testimonial_title', 'option');
-$testimonial_title_highlight = get_field('testimonial_highlight', 'option');
+$testimonial_title = get_field('testimonial_title', pll_current_language('slug'));
+$testimonial_title_highlight = get_field('testimonial_highlight', pll_current_language('slug'));
 $testimonial_new_title = brace_highlighter($testimonial_title_highlight, $testimonial_title);
 
 ?>
@@ -114,15 +116,15 @@ style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/images
 
 
         // Check rows exists.
-        if( have_rows('testimonial_slider', 'option') ):
+        if( have_rows('testimonial_slider', pll_current_language('slug')) ):
 
             // Loop through rows.
-            while( have_rows('testimonial_slider', 'option') ) : the_row();
+            while( have_rows('testimonial_slider', pll_current_language('slug')) ) : the_row();
 
                 // Load sub field value.
-                $testimonial_client_photo = get_sub_field('testimonial_client_photo', 'option')['url'];
-                $testimonial_testimonial_text = get_sub_field('testimonial_testimonial_text', 'option');
-                $testimonial_client_details = get_sub_field('testimonial_client_details', 'option');
+                $testimonial_client_photo = get_sub_field('testimonial_client_photo', pll_current_language('slug'))['url'];
+                $testimonial_testimonial_text = get_sub_field('testimonial_testimonial_text', pll_current_language('slug'));
+                $testimonial_client_details = get_sub_field('testimonial_client_details', pll_current_language('slug'));
                 // Do something...
             ?>
 
@@ -176,54 +178,26 @@ style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/images
         </div>
 </section>
 
-<!-- <?php if( get_field('vimeo_url', 'option') ): ?>
-
-<div class="video-section bg-white">
-    <div class="flex flex-col bg-white overflow-hidden" x-data="{ play: false }" x-init="$watch('play', (value) => {
-        if (value) {
-            $refs.video.play()
-        } else {
-            $refs.video.pause()
-        }
-        })">
-
-        <?php  $video = get_field('vimeo_url', 'option'); ?>
-
-        <div class="relative w-full mb-[100px] group">
-            <video x-ref="video" @click="play = !play" class="w-[53%] m-auto">
-                <source src="<?php echo esc_url($video); ?>">
-            </video>
-
-            <div @click="play = true" x-show="!play" x-transition:leave="transition ease-in duration-300"
-                x-transition:leave-start="opacity-100 transform scale-100"
-                x-transition:leave-end="opacity-0 transform scale-90"
-                class="careers-video absolute inset-0 w-[53%] m-auto h-full flex items-center flex-col-reverse justify-center bg-secondary bg-opacity-50">
-
-                <svg class="z-10" xmlns="http://www.w3.org/2000/svg" width="47.515" height="55" viewBox="0 0 47.515 55">
-                    <g id="Group_1329" data-name="Group 1329" transform="translate(-940.485 -4074)">
-                        <path id="Polygon_1" data-name="Polygon 1" d="M10,0,20,17.857H0Z"
-                            transform="translate(972.88 4091.766) rotate(90)" fill="#fff" />
-                        <path id="Subtraction_2" data-name="Subtraction 2"
-                            d="M20.016,55A27.421,27.421,0,0,1,0,46.357H3.384a25.146,25.146,0,0,0,34.411-1.079A25.142,25.142,0,0,0,20.016,2.358,24.958,24.958,0,0,0,3.384,8.643H0a27.5,27.5,0,0,1,39.461-.588A27.5,27.5,0,0,1,20.016,55Z"
-                            transform="translate(940.485 4074)" fill="#e96500" />
-                    </g>
-                </svg>
-                <h1 class="sen-bold text-white uppercase text-[23px] bg-accent px-[10px] mb-[20px]">Life at gantrex</h1>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<?php endif; ?> -->
-
 <?php 
-    $vacancyTitle  = get_field('vacancy_archive_title', 'option');
-    $vacancyTitleHighlight = get_field('vacancy_title_highlight', 'option');
-    $vacancyPara  = get_field('vacancy_archive_copy', 'option');
+    $vacancyTitle  = get_field('vacancy_archive_title', pll_current_language('slug'));
+    $vacancyTitleHighlight = get_field('vacancy_title_highlight', pll_current_language('slug'));
+    $vacancyPara  = get_field('vacancy_archive_copy', pll_current_language('slug'));
     $vacancyNewTitle = brace_highlighter($vacancyTitleHighlight, $vacancyTitle);
 ?>
 
+<?php
+
+$args = array(
+    'post_type'         => 'careers',
+    'post_status'       => 'publish',
+    'posts_per_page'    => -1,
+    // 'orderby'         => 'title',
+    'order'           => 'DESC'
+);
+
+$postslist = get_posts( $args );
+
+if(!empty($postslist)) { ?>
 <div class="current-vacancies">
     <h2 class="text-center text-[35px] tracking-[-2px] sen-bold p-4 uppercase text-primary">
         <?php echo $vacancyNewTitle; ?>
@@ -241,16 +215,8 @@ style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/images
     <div class="gap-4 w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-[100px] pt-[0px] mx-auto">
 
         <?php
-            $args = array(
-                'post_type'         => 'careers',
-                'post_status'       => 'publish',
-                'posts_per_page'    => -1,
-                // 'orderby'         => 'title',
-                'order'           => 'DESC',
-            );
-            $postslist = get_posts( $args );
-                foreach ( $postslist as $post ) :
-                    setup_postdata( $post );   
+        foreach ( $postslist as $post ) :
+            setup_postdata( $post );
         ?>
 
         <div class="job-card bg-accent flex p-8">
@@ -283,11 +249,16 @@ style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/images
     </div>
 
 </div>
+<?php } else { ?>
+    <div class="w-full flex items-center justify-center pt-10 pb-20">
+        <h5><?php echo __("Sorry, there aren't any jobs available in the currently selected language.", 'brace-starter-theme') ?></h5>
+    </div>
+<?php } ?>
 
 <?php 
-    $secondCareersTitle  = get_field('second_careers_archive_title', 'option');
-    $secondCareersTitleHighlight = get_field('second_careers_title_highlight', 'option');
-    $secondCareersPara  = get_field('second_careers_archive_copy', 'option');
+    $secondCareersTitle  = get_field('second_careers_archive_title', pll_current_language('slug'));
+    $secondCareersTitleHighlight = get_field('second_careers_title_highlight', pll_current_language('slug'));
+    $secondCareersPara  = get_field('second_careers_archive_copy', pll_current_language('slug'));
     $secondCareersNewTitle = brace_highlighter($secondCareersTitleHighlight, $secondCareersTitle);
 ?>
 
@@ -316,9 +287,9 @@ style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/images
 </div>
 
 <?php
-    $thirdCareersTitle  = get_field('third_careers_archive_title', 'option');
-    $thirdCareersTitleHighlight = get_field('third_careers_title_highlight', 'option');
-    $thirdCareersPara  = get_field('third_careers_archive_copy', 'option');
+    $thirdCareersTitle  = get_field('third_careers_archive_title', pll_current_language('slug'));
+    $thirdCareersTitleHighlight = get_field('third_careers_title_highlight', pll_current_language('slug'));
+    $thirdCareersPara  = get_field('third_careers_archive_copy', pll_current_language('slug'));
     $thirdCareersNewTitle = brace_highlighter($thirdCareersTitleHighlight, $thirdCareersTitle);
 ?>
 

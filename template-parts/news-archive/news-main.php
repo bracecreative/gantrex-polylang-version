@@ -2,9 +2,9 @@
 
 
 <?php 
-    $newsTitle  = get_field('news_archive_title', 'option');
-    $titleHighlight = get_field('news_title_highlight', 'option');
-    $newsPara  = get_field('news_archive_copy', 'option');
+    $newsTitle  = get_field('news_archive_title', pll_current_language('slug'));
+    $titleHighlight = get_field('news_title_highlight', pll_current_language('slug'));
+    $newsPara  = get_field('news_archive_copy', pll_current_language('slug'));
     $newTitle = brace_highlighter($titleHighlight, $newsTitle);
 
 
@@ -49,6 +49,7 @@
     <div class="wpgb-content-1 news-archive-wrap container m-auto">
         <div class="row flex flex-wrap justify-around m-auto gap-4 text-center mt-4" id="ajax-posts">
         <?php
+        if(!empty($postslist)) {
                 foreach ( $postslist as $post ) :
                     setup_postdata( $post );   
         ?>
@@ -58,7 +59,7 @@
                             <div class="featured-image">
                                 <?php
                                 if (has_post_thumbnail() ) {
-                                    $image = get_the_post_thumbnail( $post_id, 'small' );
+                                    $image = get_the_post_thumbnail( $post->ID, 'small' );
                                     echo $image;
                                 } else {
                                   ?>  <img src="<?php bloginfo('template_directory'); ?>/images/placeholder-1.jpg" width="1200" height="800" alt="<?php the_title(); ?>" /> 
@@ -85,16 +86,24 @@
                 <?php
                     endforeach;
                     wp_reset_postdata();
+        } else { ?>
+            <h5><?php echo __("Sorry, there aren't any news posts available in the currently selected language.", 'brace-starter-theme') ?></h5>
+        <?php }
                 ?>
                   
         </div>
     </div>
 
+    <?php
+    $post_count = count($postslist);
+    if(!empty($postslist) && $post_count >= 12) {
+        ?>
     <div class="py-4 mb-4 flex justify-center">
         <?php 
         echo do_shortcode('[wpgb_facet id="7" grid="wpgb-content-1"]'); 
         ?>
     </div>
+    <?php } ?>
 
 </div>
 

@@ -1,9 +1,9 @@
 <?php get_header() ?>
 
 <?php 
-$referencesTitle  = get_field('references_archive_title', 'option');
-$referencesTitleHighlight = get_field('references_title_highlight', 'option');
-$referencesPara  = get_field('references_archive_copy', 'option');
+$referencesTitle  = get_field('references_archive_title', pll_current_language('slug'));
+$referencesTitleHighlight = get_field('references_title_highlight', pll_current_language('slug'));
+$referencesPara  = get_field('references_archive_copy', pll_current_language('slug'));
 $referencesNewTitle = brace_highlighter($referencesTitleHighlight, $referencesTitle);
 ?>
 
@@ -13,13 +13,13 @@ $referencesNewTitle = brace_highlighter($referencesTitleHighlight, $referencesTi
 
 <div class="text-justify gothic-book m-auto max-w-[900px] w-3/5 p-2 body-text pb-[40px]"><?php echo $referencesPara; ?></div>
 
+<?php if (have_posts()): ?>
 <div class="reference-facets max-w-[1360px] w-[80%] xl:w-[60%] mx-auto">
-
     <?php echo do_shortcode('[wpgb_facet id="2" grid="wpgb-content"]') ?>
     <?php echo do_shortcode('[wpgb_facet id="1" grid="wpgb-content"]') ?>
     <?php echo do_shortcode('[wpgb_facet id="4" grid="wpgb-content"]') ?>
-
 </div>
+<?php endif; ?>
 
 <div class="w-[80%] xl:w-[60%] max-w-[1360px] references-post-wrap m-auto">
 
@@ -39,7 +39,7 @@ if (have_posts()) :
         <div class="w-full lg:w-1/3">
             <?php
                 if (has_post_thumbnail() ) {
-                    $image = get_the_post_thumbnail_url( $post_id, 'small' );
+                    $image = get_the_post_thumbnail_url( get_the_ID(), 'small' );
                     echo "<img class='reference-image h-[200px] md:h-full w-full object-cover object-center' src='";
                     echo $image;
                     echo "' alt='";
@@ -80,9 +80,16 @@ endif;
 
 </div>
 
-<div class="w-full flex justify-center">
-    <?php echo do_shortcode('[wpgb_facet id="3" grid="wpgb-content"]') ?>
-</div>
+<?php ?>
+
+    <div class="w-full flex justify-center">
+        <?php
+        if (have_posts()) {
+        echo do_shortcode('[wpgb_facet id="3" grid="wpgb-content"]');
+        } else { ?>
+            <h5><?php echo __("Sorry, there aren't any references available in the currently selected language.", 'brace-starter-theme') ?></h5>
+        <?php } ?>
+    </div>
 
 <div class="testimonials overflow-hidden p-10 my-10 bg-primary mt-[90px]"
     style="background-position:center;background-size:105%;background-repeat:no-repeat;background-image: url(<?php echo get_template_directory_uri() . '/images/overlay.png' ?>);">

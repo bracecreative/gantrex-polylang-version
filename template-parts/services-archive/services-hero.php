@@ -1,8 +1,8 @@
 
 <?php 
-    $serviceTitle  = get_field('services_archive_title', 'option');
-    $titleHighlight = get_field('services_title_highlight', 'option');
-    $servicePara  = get_field('services_archive_copy', 'option');
+    $serviceTitle  = get_field('services_archive_title', pll_current_language('slug'));
+    $titleHighlight = get_field('services_title_highlight', pll_current_language('slug'));
+    $servicePara  = get_field('services_archive_copy', pll_current_language('slug'));
     $newTitle = brace_highlighter($titleHighlight, $serviceTitle);
 ?>
 

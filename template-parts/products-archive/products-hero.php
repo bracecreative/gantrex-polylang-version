@@ -1,9 +1,11 @@
 
-<?php 
-$productsTitle  = get_field('products_archive_title', 'option');
-$productsTitleHighlight = get_field('products_title_highlight', 'option');
-$productsPara  = get_field('products_archive_copy', 'option');
+<?php
+
+$productsTitle  = get_field('products_archive_title', pll_current_language('slug'));
+$productsTitleHighlight = get_field('products_title_highlight', pll_current_language('slug'));
+$productsPara  = get_field('products_archive_copy', pll_current_language('slug'));
 $productsNewTitle = brace_highlighter($productsTitleHighlight, $productsTitle);
+
 ?>
 
 

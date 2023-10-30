@@ -148,3 +148,6 @@ function the_title_polylang($post_id){
 
     echo get_the_title($translations[$current_lang]);
 }
+
+//Show archives even if there are no Polylang translations for that post type
+add_filter( 'pll_hide_archive_translation_url', '__return_false' );

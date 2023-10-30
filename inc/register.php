@@ -130,21 +130,22 @@ function register_options_page()
             //    Register the CPT language options pages
             foreach (['en', 'es', 'de', 'fr', 'zh-hans'] as $lang) {
 
+                $cpt_uc = ucfirst($cpt);
                 $lang_uc = ucfirst($lang);
                 $parent = '';
 
                 if($cpt == 'post') {
                     $parent = 'edit.php';
                 } else {
-                    $parent = 'edit.php?post_type=';
+                    $parent = 'edit.php?post_type=' . $cpt;
                 }
 
                 acf_add_options_sub_page([
-                    'page_title' => "Options $lang_uc",
-                    'menu_title' => __("Options ${lang_uc}", 'brace-starter-theme'),
+                    'page_title' => "$cpt_uc Archive $lang_uc",
+                    'menu_title' => __("Archive ${lang_uc}", 'brace-starter-theme'),
                     'menu_slug' => "${cpt}-options-${lang}",
                     'post_id' => $lang,
-                    'parent' => "${parent}${cpt}"
+                    'parent' => "${parent}"
                 ]);
 
             }
