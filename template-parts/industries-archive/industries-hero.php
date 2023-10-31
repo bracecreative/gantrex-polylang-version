@@ -1,8 +1,8 @@
 
 <?php 
-$industriesTitle  = get_field('industries_archive_title', 'option');
-$titleHighlight = get_field('industries_title_highlight', 'option');
-$industriesPara  = get_field('industries_archive_copy', 'option');
+$industriesTitle  = get_field('industries_archive_title', pll_current_language('slug'));
+$titleHighlight = get_field('industries_title_highlight', pll_current_language('slug'));
+$industriesPara  = get_field('industries_archive_copy', pll_current_language('slug'));
 $industriesNewTitle = brace_highlighter($titleHighlight, $industriesTitle);
 ?>
 

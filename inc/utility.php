@@ -55,12 +55,12 @@ function limit_words($string, $word_limit) {
 class BraceNavBuilder {
 	protected $menuParams;
 
-	public function __construct($location) {
+	public function __construct($location, $id = 'nav-wrap', $class = 'brace-nav-menu') {
 		$this->menuParams = array(
 			'theme_location' => $location,
 			'container' => false,
 			'echo' => true,
-			'items_wrap' => '<ul id="nav-wrap">%3$s</ul>',
+			'items_wrap' => '<ul id="'.$id.'" class="'.$class.'">%3$s</ul>',
 			'depth' => 0,
 		);
 	}

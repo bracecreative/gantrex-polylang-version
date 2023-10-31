@@ -10,7 +10,8 @@ if ( ! function_exists( 'custom_setup' ) ) {
 		register_nav_menus( array(
 			'desktop' => __( 'Desktop Menu', 'default' ),
 			'mobile'=> __( 'Mobile Menu', 'default' ),
-			'footer' => __( 'Footer Menu', 'default' ),
+            'footer' => __( 'Footer Links', 'default' ),
+            'footer-main' => __( 'Footer Main', 'default' ),
 		) );
 
 		/*

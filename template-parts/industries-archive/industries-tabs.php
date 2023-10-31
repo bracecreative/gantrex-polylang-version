@@ -29,15 +29,15 @@ history.pushState(null, document.title, url.toString());
                         <?php
 
                 // Check rows exists.
-                if (have_rows('tab', 'options')) :
+                if (have_rows('tab', pll_current_language('slug'))) :
 
                     // Loop through rows.
-                    while (have_rows('tab', 'options')) : the_row();
+                    while (have_rows('tab', pll_current_language('slug'))) : the_row();
 
                         // Load sub field value.
-                        $tab_title = get_sub_field('tab_title', 'options');
+                        $tab_title = get_sub_field('tab_title', pll_current_language('slug'));
                         $tab_count++;
-                        $image = get_sub_field('image', 'options')['url'];
+                        $image = get_sub_field('image', pll_current_language('slug'))['url'];
 
 
                 ?>
@@ -73,13 +73,13 @@ history.pushState(null, document.title, url.toString());
             <?php
 
             // Check rows exists.
-            if (have_rows('tab', 'options')) :
+            if (have_rows('tab', pll_current_language('slug'))) :
 
                 // Loop through rows.
-                while (have_rows('tab', 'options')) : the_row();
+                while (have_rows('tab', pll_current_language('slug'))) : the_row();
 
                     // Load sub field value.
-                    $image = get_sub_field('image', 'options')['url'];
+                    $image = get_sub_field('image', pll_current_language('slug'))['url'];
                     $image_count++;
             ?>
 
@@ -107,17 +107,17 @@ history.pushState(null, document.title, url.toString());
             <?php
 
             // Check rows exists.
-            if (have_rows('tab', 'options')) :
+            if (have_rows('tab', pll_current_language('slug'))) :
 
                 // Loop through rows.
-                while (have_rows('tab', 'options')) : the_row();
+                while (have_rows('tab', pll_current_language('slug'))) : the_row();
 
                     // Load sub field value.
-                    $content_title = get_sub_field('content_title', 'options');
-                    $content_text = get_sub_field('content_text', 'options');
+                    $content_title = get_sub_field('content_title', pll_current_language('slug'));
+                    $content_text = get_sub_field('content_text', pll_current_language('slug'));
                     $content_count++;
 
-                    $download_shortcode = get_sub_field('download_shortcode', 'options');
+                    $download_shortcode = get_sub_field('download_shortcode', pll_current_language('slug'));
             ?>
 
 
