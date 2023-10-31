@@ -1,12 +1,13 @@
 #footer-main {
   li {
     @apply flex items-center justify-center;
-    &:after {
-      margin-top: 6px;
-      content: url("/images/submit-arrow.svg");
-    }
     a {
       @apply sen uppercase font-bold tracking-widest text-base text-primary flex items-center;
+
+      &:after {
+        margin-top: 6px;
+        content: url("/images/submit-arrow.svg");
+      }
     }
   }
 }
