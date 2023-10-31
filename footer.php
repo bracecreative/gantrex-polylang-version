@@ -46,53 +46,10 @@
         </div>
 
         <div class="w-full mb-8">
-            <!--                <div class="flex flex-col xl:flex-row xl:space-x-8 justify-center mb-4 xl:mb-0">-->
-
             <?php
             $footer_main = new BraceNavBuilder('footer-main', 'footer-main', 'flex flex-col xl:flex-row xl:space-x-8 justify-center mb-4 xl:mb-0');
             $footer_main->generate();
             ?>
-
-            <!--                    <a class="w-full md:w-auto flex-none"-->
-            <!--                        href="--><?php //echo get_home_url() . '/corporate-information' ?><!--">-->
-            <!--                        <div class="gtx-submit flex items-center justify-center">-->
-            <!--                            <span-->
-            <!--                                class="sen uppercase font-bold tracking-widest text-base text-primary flex items-center">--><?php //echo __('about
-            //                                us', 'brace-starter-theme') ?><!--</span>-->
-            <!--                        </div>-->
-            <!--                    </a>-->
-            <!---->
-            <!--                    <a class="w-full md:w-auto flex-none" href="--><?php // echo get_home_url() . '/find-us' ?><!--">-->
-            <!--                        <div class="gtx-submit flex items-center justify-center">-->
-            <!--                            <span-->
-            <!--                                class="sen uppercase font-bold tracking-widest text-base text-primary flex items-center">--><?php //echo __('find
-            //                                us', 'brace-starter-theme') ?><!--</span>-->
-            <!--                        </div>-->
-            <!--                    </a>-->
-            <!---->
-            <!--                    <a class="w-full md:w-auto flex-none" href="--><?php //echo get_post_type_archive_link('products'); ?><!--">-->
-            <!--                        <div class="gtx-submit flex items-center justify-center">-->
-            <!--                            <span-->
-            <!--                                class="sen uppercase font-bold tracking-widest text-base text-primary flex items-center">--><?php //echo __('products', 'brace-starter-theme') ?><!--</span>-->
-            <!--                        </div>-->
-            <!--                    </a>-->
-            <!---->
-            <!--                    <a class="w-full md:w-auto flex-none" href="--><?php //echo get_post_type_archive_link('services'); ?><!--">-->
-            <!--                        <div class="gtx-submit flex items-center justify-center">-->
-            <!--                            <span-->
-            <!--                                class="sen uppercase font-bold tracking-widest text-base text-primary flex items-center">--><?php //echo __('services', 'brace-starter-theme') ?><!--</span>-->
-            <!--                        </div>-->
-            <!--                    </a>-->
-            <!---->
-            <!--                    <a class="w-full md:w-auto flex-none" href="--><?php // echo get_home_url() . '/documents' ?><!--">-->
-            <!--                        <div class="gtx-submit flex items-center justify-center">-->
-            <!--                            <span-->
-            <!--                                class="sen uppercase font-bold tracking-widest text-base text-primary flex items-center">--><?php //echo __('downloads', 'brace-starter-theme') ?><!--</span>-->
-            <!--                        </div>-->
-            <!--                    </a>-->
-
-            <!--                </div>-->
-
         </div>
 
 
@@ -110,17 +67,16 @@
 
             <!-- Right Col  -->
             <div class="w-full flex flex-col justify-center xl:justify-end xl:items-end mb-4 xl:mb-0">
-                <p class="text-[12px] uppercase gothic-medium tracking-[1.8px] leading-[14px] text-accent text-center">
-                    <?php echo __('website by', 'brace-starter-theme') ?> <a href="https://www.brace.co.uk/"
-                        target="_blank">brace creative agency</a>
-                </p>
-
                 <div class="w-full flex flex-col xl:flex-row xl:space-x-4 justify-end items-center xl:items-end mb-4 xl:mb-0">
                     <?php
                     $footer_nav = new BraceNavBuilder('footer');
                     $footer_nav->generate();
                     ?>
                 </div>
+                <p class="text-[12px] uppercase gothic-medium tracking-[1.8px] leading-[14px] text-accent text-center">
+                    <?php echo __('website by', 'brace-starter-theme') ?> <a href="https://www.brace.co.uk/"
+                        target="_blank">brace creative agency</a>
+                </p>
             </div>
         </div>
 
