@@ -75,12 +75,33 @@ if (is_page($enabledPagesArray)) {
             <div class="w-full md:w-auto flex justify-between md:space-x-4">
                 <!-- Language  -->
                 <div class="flex items-center">
-                    <?php
+                    <select name="lang_choice_1" id="lang_choice_1" class="pll-switcher-select">
+                        <?php
 
-                    // do_action('wpml_add_language_selector');
-                    $args = array('show_flags' => 0, 'show_names' => 0, 'hide_current' => false,'dropdown' => 1,'display_names_as'=>'slug'); pll_the_languages($args);
+                        $raw_pll = pll_the_languages( array('raw' => true));
 
-                    ?>
+                        $flag_emoji = '';
+
+                        foreach ($raw_pll as $pll) :
+
+                            if($pll['slug'] == 'en' ) {
+                                $flag_emoji = '🇺🇸';
+                            } elseif ($pll['slug'] == 'es') {
+                                $flag_emoji = '🇪🇸';
+                            } elseif ($pll['slug'] == 'de') {
+                                $flag_emoji = '🇩🇪';
+                            } elseif ($pll['slug'] == 'zh-hans') {
+                                $flag_emoji = '🇨🇳';
+                            } elseif ($pll['slug'] == 'fr') {
+                                $flag_emoji = '🇫🇷';
+                            }
+
+                            ?>
+                            <option value="<?php echo $pll['url'] ?>" lang="<?php echo $pll['locale'] ?>" <?php echo $pll['current_lang'] ? 'selected="selected"' : '' ?>>
+                                <?php echo $flag_emoji ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
 
                 <!-- Search -->

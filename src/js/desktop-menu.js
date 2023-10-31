@@ -2,6 +2,8 @@ import $ from 'jquery';
 
 $(document).ready(function () {
 
+    document.getElementById( "lang_choice_1" ).addEventListener( "change", function ( event ) { location.href = event.currentTarget.value; } )
+
     // Change homepage navbar on scroll 
     const navbar = document.querySelector('.main-nav');
     const logo = document.querySelector('.logo');
