@@ -97,7 +97,7 @@ if (is_page($enabledPagesArray)) {
                             }
 
                             ?>
-                            <option value="<?php echo $pll['url'] ?>" lang="<?php echo $pll['locale'] ?>" <?php echo $pll['current_lang'] ? 'selected="selected"' : '' ?>>
+                            <option value="<?php echo $pll['url'] ?>" lang="<?php echo $pll['locale'] ?>" <?php echo $pll['current_lang'] ? 'selected="selected"' : '' ?> class="gtx-language-switcher">
                                 <?php echo $flag_emoji ?>
                             </option>
                         <?php endforeach; ?>

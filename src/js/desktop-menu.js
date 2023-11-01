@@ -1,8 +1,13 @@
 import $ from 'jquery';
+import { polyfillCountryFlagEmojis } from 'country-flag-emoji-polyfill';
 
 $(document).ready(function () {
 
-    document.getElementById( "lang_choice_1" ).addEventListener( "change", function ( event ) { location.href = event.currentTarget.value; } )
+    // Polyfill to make flag emojis work on Windows systems
+    polyfillCountryFlagEmojis();
+
+    // Language switcher
+    document.getElementById( "lang_choice_1" ).addEventListener( "change", function ( event ) { location.href = event.currentTarget.value; } );
 
     // Change homepage navbar on scroll 
     const navbar = document.querySelector('.main-nav');
@@ -12,7 +17,6 @@ $(document).ready(function () {
     const burger = document.querySelector('.burger');
     const mobileMenu = document.querySelector('.mobile-menu');
 
-
     burger.addEventListener('click', () => {
         mobileMenu.classList.toggle('h-0');
         mobileMenu.classList.toggle('h-full');
@@ -20,9 +24,6 @@ $(document).ready(function () {
 
         burger.classList.toggle('hover:rotate-90');
         burger.classList.toggle('hover:-rotate-90');
-
-
-        
     })
 });
 
@@ -38,4 +39,4 @@ $(document).ready(function () {
                 navbar.classList.remove('scroll-styling');
             }
         }
-    });
+});

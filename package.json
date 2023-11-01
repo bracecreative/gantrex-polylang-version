@@ -57,6 +57,7 @@
 		]
 	},
 	"dependencies": {
+		"country-flag-emoji-polyfill": "^0.1.4",
 		"country-flags-svg": "^1.1.6",
 		"isotope-layout": "^3.0.6",
 		"jquery": "^3.6.0",
