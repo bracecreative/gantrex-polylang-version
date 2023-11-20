@@ -128,7 +128,7 @@ function register_options_page()
         foreach ($cpt_pages as $cpt) {
 
             //    Register the CPT language options pages
-            foreach (['en', 'es', 'de', 'fr', 'zh-hans'] as $lang) {
+            foreach (['en', 'es', 'de', 'fr', 'ch-hans'] as $lang) {
 
                 $cpt_uc = ucfirst($cpt);
                 $lang_uc = ucfirst($lang);
@@ -228,7 +228,7 @@ function register_acf_fields()
             'instructions'  => 'This image will be displayed as a full-page hero at the top of the document directory page.',
             'return_format' => 'id'
         )),
-        ACF\field('document_directory_intro', 'wysiwyg')->set(array(
+        ACF\field('document_directory_intro_en', 'wysiwyg')->set(array(
             'label'        => 'Introduction text',
             'instructions' => 'A brief introduction to be displayed above the document directory table.'
         )),
@@ -240,6 +240,138 @@ function register_acf_fields()
     );
 
     acf_add_local_field_group($documentDirectoryOptions->toArray());
+
+    $documentDirectoryOptionsES = ACF\fields('Document Directory ES', array(
+        array(
+            array(
+                'param' => 'options_page',
+                'operator' => '==',
+                'value' => 'gantrex-settings',
+            ),
+        ),
+    ))->add(
+        ACF\field('document_directory_path_es', 'text')->set(array(
+            'label'        => 'Path',
+            'instructions' => sprintf('This value will default to "documents" if left blank. Note that upon changing this setting, you will be required to <a href="%s">flush permalinks</a> (simply navigate to the page).', admin_url('/options-permalink.php')),
+            'placeholder'  => 'documents',
+            'prepend'      => home_url('/')
+        )),
+        ACF\field('document_directory_image_es', 'image')->set(array(
+            'label'         => 'Hero image',
+            'instructions'  => 'This image will be displayed as a full-page hero at the top of the document directory page.',
+            'return_format' => 'id'
+        )),
+        ACF\field('document_directory_intro_es', 'wysiwyg')->set(array(
+            'label'        => 'Introduction text',
+            'instructions' => 'A brief introduction to be displayed above the document directory table.'
+        )),
+        ACF\field('document_download_data_capture_form_es', 'select')->set(array(
+            'label'        => 'Download Data Capture Form',
+            'instructions' => 'This form will be presented to the user when they attempt to download a document. It will only be presented to each user once',
+            'choices'      => array('' => 'No form selected') + wp_list_pluck(\GFAPI::get_forms(), 'title', 'id')
+        ))
+    );
+
+    acf_add_local_field_group($documentDirectoryOptionsES->toArray());
+
+    $documentDirectoryOptionsDE = ACF\fields('Document Directory DE', array(
+        array(
+            array(
+                'param' => 'options_page',
+                'operator' => '==',
+                'value' => 'gantrex-settings',
+            ),
+        ),
+    ))->add(
+        ACF\field('document_directory_path_de', 'text')->set(array(
+            'label'        => 'Path',
+            'instructions' => sprintf('This value will default to "documents" if left blank. Note that upon changing this setting, you will be required to <a href="%s">flush permalinks</a> (simply navigate to the page).', admin_url('/options-permalink.php')),
+            'placeholder'  => 'documents',
+            'prepend'      => home_url('/')
+        )),
+        ACF\field('document_directory_image_de', 'image')->set(array(
+            'label'         => 'Hero image',
+            'instructions'  => 'This image will be displayed as a full-page hero at the top of the document directory page.',
+            'return_format' => 'id'
+        )),
+        ACF\field('document_directory_intro_de', 'wysiwyg')->set(array(
+            'label'        => 'Introduction text',
+            'instructions' => 'A brief introduction to be displayed above the document directory table.'
+        )),
+        ACF\field('document_download_data_capture_form_de', 'select')->set(array(
+            'label'        => 'Download Data Capture Form',
+            'instructions' => 'This form will be presented to the user when they attempt to download a document. It will only be presented to each user once',
+            'choices'      => array('' => 'No form selected') + wp_list_pluck(\GFAPI::get_forms(), 'title', 'id')
+        ))
+    );
+
+    acf_add_local_field_group($documentDirectoryOptionsDE->toArray());
+
+    $documentDirectoryOptionsFR = ACF\fields('Document Directory FR', array(
+        array(
+            array(
+                'param' => 'options_page',
+                'operator' => '==',
+                'value' => 'gantrex-settings',
+            ),
+        ),
+    ))->add(
+        ACF\field('document_directory_path_fr', 'text')->set(array(
+            'label'        => 'Path',
+            'instructions' => sprintf('This value will default to "documents" if left blank. Note that upon changing this setting, you will be required to <a href="%s">flush permalinks</a> (simply navigate to the page).', admin_url('/options-permalink.php')),
+            'placeholder'  => 'documents',
+            'prepend'      => home_url('/')
+        )),
+        ACF\field('document_directory_image_fr', 'image')->set(array(
+            'label'         => 'Hero image',
+            'instructions'  => 'This image will be displayed as a full-page hero at the top of the document directory page.',
+            'return_format' => 'id'
+        )),
+        ACF\field('document_directory_intro_fr', 'wysiwyg')->set(array(
+            'label'        => 'Introduction text',
+            'instructions' => 'A brief introduction to be displayed above the document directory table.'
+        )),
+        ACF\field('document_download_data_capture_form_fr', 'select')->set(array(
+            'label'        => 'Download Data Capture Form',
+            'instructions' => 'This form will be presented to the user when they attempt to download a document. It will only be presented to each user once',
+            'choices'      => array('' => 'No form selected') + wp_list_pluck(\GFAPI::get_forms(), 'title', 'id')
+        ))
+    );
+
+    acf_add_local_field_group($documentDirectoryOptionsFR->toArray());
+
+    $documentDirectoryOptionsCH = ACF\fields('Document Directory CN', array(
+        array(
+            array(
+                'param' => 'options_page',
+                'operator' => '==',
+                'value' => 'gantrex-settings',
+            ),
+        ),
+    ))->add(
+        ACF\field('document_directory_path_ch', 'text')->set(array(
+            'label'        => 'Path',
+            'instructions' => sprintf('This value will default to "documents" if left blank. Note that upon changing this setting, you will be required to <a href="%s">flush permalinks</a> (simply navigate to the page).', admin_url('/options-permalink.php')),
+            'placeholder'  => 'documents',
+            'prepend'      => home_url('/')
+        )),
+        ACF\field('document_directory_image_ch', 'image')->set(array(
+            'label'         => 'Hero image',
+            'instructions'  => 'This image will be displayed as a full-page hero at the top of the document directory page.',
+            'return_format' => 'id'
+        )),
+        ACF\field('document_directory_intro_zh-hans', 'wysiwyg')->set(array(
+            'label'        => 'Introduction text',
+            'instructions' => 'A brief introduction to be displayed above the document directory table.'
+        )),
+        ACF\field('document_download_data_capture_form_ch', 'select')->set(array(
+            'label'        => 'Download Data Capture Form',
+            'instructions' => 'This form will be presented to the user when they attempt to download a document. It will only be presented to each user once',
+            'choices'      => array('' => 'No form selected') + wp_list_pluck(\GFAPI::get_forms(), 'title', 'id')
+        ))
+    );
+
+    acf_add_local_field_group($documentDirectoryOptionsCH->toArray());
 }
 
 add_action('init', '\Brace\register_acf_fields');
